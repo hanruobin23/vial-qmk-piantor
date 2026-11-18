@@ -1,0 +1,45 @@
+/*
+ * Copyright 2022 Charly Delay <charly@codesink.dev> (@0xcharly)
+ *
+ * This program is free software: you can redistribute it and/or modify
+ * it under the terms of the GNU General Public License as published by
+ * the Free Software Foundation, either version 2 of the License, or
+ * (at your option) any later version.
+ *
+ * This program is distributed in the hope that it will be useful,
+ * but WITHOUT ANY WARRANTY; without even the implied warranty of
+ * MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ * GNU General Public License for more details.
+ *
+ * You should have received a copy of the GNU General Public License
+ * along with this program.  If not, see <http://www.gnu.org/licenses/>.
+ */
+
+#pragma once
+
+/* Handedness. */
+// #define MASTER_RIGHT
+
+// To use the handedness pin, resistors need to be installed on the adapter PCB.
+// If so, uncomment the following code, and undefine MASTER_RIGHT above.
+// #define SPLIT_HAND_PIN GP15
+// #define SPLIT_HAND_PIN_LOW_IS_LEFT  // High -> right, Low -> left.
+
+/* Reset. */
+
+#define COMBO_TERM 35
+// reduce holding duration to be triggered as a hold
+#define TAPPING_TERM 170
+#define TAPPING_TERM_PER_KEY
+// #define PERMISSIVE_HOLD_PER_KEY
+// #define HOLD_ON_OTHER_KEY_PRESS
+#define PERMISSIVE_HOLD
+#define HOLD_ON_OTHER_KEY_PRESS_PER_KEY
+// #define TAPPING_TOGGLE 1
+// #define AUTO_SHIFT_TIMEOUT 160
+// #define RGBLIGHT_DEFAULT_MODE RGBLIGHT_MODE_STATIC_LIGHT
+// #define RGBLIGHT_DEFAULT_HUE RGB_ORANGE
+
+# define NO_AUTO_SHIFT_ALPHA
+# define NO_AUTO_SHIFT_SPECIAL
+// # define LED_CAPS_LOCK_PIN
